@@ -10,7 +10,8 @@ First, we will pull the BusyBox image and launch a container in interactive mode
 docker pull busybox
 docker run -it --name my-busybox-container busybox
 ```
-### Step 2: Create Two Users and Add Them to a Group
+### Step 2: 
+Create Two Users and Add Them to a Group
 Inside the container, follow these steps to create two users and assign them to a specific group:
 
 Create the Group:
@@ -60,7 +61,8 @@ chmod +t /shared-dir
 ```
 This ensures that only the owner of a file can delete it, even though all group members have read and write permissions.
 
-### Step 5: Persist Data Across Container Runs
+### Step 5:
+Persist Data Across Container Runs
 To persist data across container runs, you'll use Docker volumes to store the shared directory's data on the host system. This way, the data will remain even if the container is stopped or removed.
 
 Exit the Container:
