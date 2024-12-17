@@ -108,18 +108,15 @@ Restart the Container and verify that the data in /shared-dir is persisted:
 ```
 docker stop my-busybox-container
 ```
+
 ```
 docker start my-busybox-container
 ```
+
+```
 docker exec -it my-busybox-container /bin/sh
 ```
+
 ```
 ls /shared-dir
 ```
-
-
-
-
-
-
-
